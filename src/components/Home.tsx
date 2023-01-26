@@ -11,9 +11,9 @@ const Highlight = styled.span`
 const Home = () => {
     return <>
         <Container className="text-center pt-5">
-            <h1 className="fw-bold">Bem-vindo ao <Highlight>Costs</Highlight></h1>
-            <p className="text-muted my-4">Comece a gerenciar os seus projetos agora mesmo!</p>
-            <a className="btn btn-dark">Criar Projeto</a>
+            <h1 className="fw-bold">Welcome to <Highlight>Costs</Highlight></h1>
+            <p className="text-muted my-4">Start to manage your projects and costs!</p>
+            <a className="btn btn-dark">Create Project</a>
             <div className="pt-5">
                 <img src={savings} alt="" style={{width: "24rem"}}/>
             </div>
