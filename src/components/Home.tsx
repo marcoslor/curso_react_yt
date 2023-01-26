@@ -1,7 +1,6 @@
 import { Container } from "react-bootstrap"
 import styled from "styled-components"
 import savings from "../assets/img/savings.svg"
-import variables from '../assets/styles/variables.module.scss?inline'    
 
 const Highlight = styled.span`
     color: var(--bs-primary);
