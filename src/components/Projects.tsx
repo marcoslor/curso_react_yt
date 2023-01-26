@@ -84,7 +84,7 @@ function Projects() {
         </Link>
       </div>
       <ProjectGrid>
-        {(!projectsQuery.loading &&
+        {(projectsQuery.loading &&
           Array.from({ length: 3 }).map((_, i) => (
             <PlaceholderCard key={i} />
           ))) ||
