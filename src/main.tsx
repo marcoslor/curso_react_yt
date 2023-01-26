@@ -1,13 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './assets/styles/index.css'
-import './assets/styles/bootstrap.scss'
-import { BrowserRouter } from 'react-router-dom'
-import 'bootstrap/dist/js/bootstrap.bundle.min'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
+import { ApolloProvider } from "@apollo/client/react";
 
-import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client'
-import { ApolloProvider } from '@apollo/client/react'
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+import "./assets/styles/index.css";
+import "./assets/styles/bootstrap.scss";
+import App from "./App";
 
 const httpLink = new HttpLink({
   uri: import.meta.env.VITE_BACKEND_HOSTNAME,
@@ -18,7 +19,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <ApolloProvider client={client}>
       <BrowserRouter>
@@ -26,4 +27,4 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       </BrowserRouter>
     </ApolloProvider>
   </React.StrictMode>,
-)
+);

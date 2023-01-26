@@ -1,11 +1,12 @@
 import { gql } from "@apollo/client";
+
 const CATEGORY_FRAGMENT = gql`
   fragment CategoryFragment on Category {
     name
     id
     color
   }
-`
+`;
 const SERVICE_FRAGMENT = gql`
   fragment ServiceFragment on Service {
     name
@@ -34,7 +35,7 @@ const PROJECT_FRAGMENT = gql`
 export const ALL_PROJECTS = gql`
   query allProjects {
     allProjects {
-        ...ProjectFragment
+      ...ProjectFragment
     }
   }
   ${PROJECT_FRAGMENT}

@@ -1,5 +1,7 @@
-import { Container } from 'react-bootstrap'
+import { Container } from "react-bootstrap";
 
-const CreateProject = () => <Container></Container>
+function CreateProject() {
+  return <Container />;
+}
 
-export default CreateProject
+export default CreateProject;

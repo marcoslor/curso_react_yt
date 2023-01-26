@@ -1,9 +1,9 @@
 export type ID = string | number;
 
 export interface Category {
-    name: string;
-    id: ID;
-    color: string;
+  name: string;
+  id: ID;
+  color: string;
 }
 
 export interface Service {
@@ -17,7 +17,7 @@ export interface Project {
   name: string;
   budget: number;
   cost: number;
-    id: ID;
-    Services: Service[];
-    Category: Category;
+  id: ID;
+  Services: Service[];
+  Category: Category;
 }
