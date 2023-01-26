@@ -3,49 +3,47 @@
     {
       "name": "Projeto de Infra",
       "budget": "10000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
+      "category_id": 1,
       "cost": 5000,
-      "services": [
-        {
-          "name": "Contratar um DevOps",
-          "cost": "5000",
-          "description": "DevOps para criar projeto na AWS",
-          "id": "79475653-9d65-4eb0-921b-9b12b6c6be52"
-        }
-      ],
-      "id": 2
+      "id": 1
     },
     {
       "name": "Desenvolvimento do novo site",
       "budget": "3000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
+      "category_id": "2",
       "cost": 0,
-      "services": [],
-      "id": 3
+      "id": 2
     }
   ],
   "categories": [
     {
       "id": 1,
-      "name": "Infra"
+      "name": "infrastructure",
+      "color": "#F5A623"
     },
     {
       "id": 2,
-      "name": "Desenvolvimento"
+      "name": "developement",
+      "color": "#54C229"
     },
     {
       "id": 3,
-      "name": "Design"
+      "name": "design",
+      "color": "#1B6BD3"
     },
     {
       "id": 4,
-      "name": "Planejamento"
+      "name": "planning",
+      "color": "#CA4118"
+    }
+  ],
+  "services": [
+    {
+      "name": "Contratar um DevOps",
+      "cost": "5000",
+      "description": "DevOps para criar projeto na AWS",
+      "id": 1,
+      "project_id": 1
     }
   ]
 }
