@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CreateProject from "./components/CreateProject";
 import Projects from "./components/Projects";
+import EditProject from "./components/EditProject";
 
 const AppWrapper = styled.div`
   min-height: 100vh;
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/create" element={<CreateProject />} />
+        <Route path="/projects/:id" element={<EditProject />} />
         <Route path="/about" element={<h1>About</h1>} />
         <Route path="/contact" element={<h1>Contact</h1>} />
       </Routes>

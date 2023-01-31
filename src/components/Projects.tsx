@@ -55,7 +55,10 @@ function ProjectCard({ project }: { project: Project }) {
       </div>
       <div className="card-footer">
         <div className="d-flex">
-          <Link to="/projects/1" className="btn btn-primary me-2 btn-sm">
+          <Link
+            to={`/projects/${project.id}`}
+            className="btn btn-primary me-2 btn-sm"
+          >
             <FaPencilAlt className="me-2" />
             Edit
           </Link>
@@ -76,7 +79,7 @@ function Projects() {
   const projects = projectsQuery.data?.allProjects as Project[];
 
   return (
-    <Container>
+    <Container className="my-5">
       <div className="d-flex justify-content-between align-items-center my-4">
         <h1>My Projects</h1>
         <Link to="/projects/create" className="btn btn-dark">
